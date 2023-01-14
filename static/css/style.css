@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
 
 
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
 
 :root {
   --border-radius: 10px;
@@ -9,74 +11,48 @@
 
 body,
 html {
-  background: black;
+    background: rgb(247, 202, 201);
+    
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
   height: 100%;
   grid-template: 1fr/100%;
   place-items: center;
+  font-family: 'Roboto Mono';
+    letter-spacing: 1px;
 }
 
-.Card {
-  padding: 1px;
-  border-radius: var(--border-radius);
-  background: linear-gradient(
-    -67deg,
-    rgba(#c8d8e7, 0.7),
-    rgba(255, 255, 255, 0.8)
-  );
-  overflow: hidden;
-  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
-  width: 380px;
-}
 
-.CardInner {
-  padding: 16px 16px;
-  background-color: black;
-  border-radius: var(--border-radius);
-}
 
-.container {
-    place-items: center;
-
-  display: flex;
-}
-
-.Icon {
-  min-width: 46px;
-  min-height: 46px;
-  display: flex;
+.custom-select{
   align-items: center;
-  justify-content: center;
-  border-radius: var(--border-radius);
-  margin-right: 12px;
-  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
-
-  
+  height: 50px;
+  width: 250px;
+  font-size: large;
 }
 
-label {
-  font-family: "Hind", sans-serif;
-  display: block;
-  color: #3c4b66;
-  margin-bottom: 12px;
-  background: linear-gradient(45deg, rgba(#6b7b8f, 1), #3c4b66);
-  
-  -webkit-text-fill-color: transparent;
+.Card{
+  flex-direction: row;
+  place-content: center;
+  float: center;
+  width:auto
 }
+.stack_inp {
+    height: 150px;
 
-.InputContainer {
-  width: 100%;
-}
 
-input {
-  background-color: black;
+  background-color: white;
   padding: 16px 32px;
   border: none;
   display: block;
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
-  color: #a9b8c9;
+  color: black;
   transition: all 240ms ease-out;
-  width: 100%;
+  
+  font-size:larger;
 }
 
   ::placeholder {
@@ -85,13 +61,13 @@ input {
 
   :focus {
     outline: none;
-    color: #6d7f8f;
+    color: black;
     background-color: lighten(#e3edf7, 3%);
   }
 
 
 .InputContainer {
-  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #f7daf4;
   --bottom-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.7);
 
   position: relative;
@@ -105,8 +81,7 @@ input {
     display: block;
     content: "";
     pointer-events: none;
-    width: 100%;
-    height: 100%;
+    
     position: absolute;
   }
 
@@ -120,26 +95,47 @@ input {
 
 
 body{
-    background-image:url(bgimg-2.jpg);
+    /* background-image:url(bgimg-2.jpg); */
     background-size: auto;
     background-position: center;
     background-size: cover;
 }
+h1{
 
-h1 {
-    /* text-align: center; */
-    margin: 0;
-    padding: 0;
-    height: 10vw;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:8vw;
-    background-color:rgba(18,18,18,0.75);
-    color : #f1f1f1;
-    font-family: Orbitron;
-  }
+text-align: center;
+font-weight: 600;
+font-size: 3em;
+letter-spacing: 0px;
+text-shadow: 1px 1px rgba(0,
+0,
+0,
+0.02),
+2px 2px rgba(0,
+0,
+0,
+0.02),
+3px 3px rgba(0,
+0,
+0,
+0.02),
+4px 4px rgba(0,
+0,
+0,
+0.02),
+5px 5px rgba(0,
+0,
+0,
+0.02),
+6px 6px rgba(0,
+0,
+0,
+0.02),
+7px 7px rgba(0,
+0,
+0,
+0.02);
+}
+
 
   .item{
     width:100%;
@@ -157,15 +153,30 @@ h1 {
       padding: 15px 32px;
       text-align: center;
       position: relative;
+      
       text-decoration: none;
-      font-size: 3vw;
-      background-color:rgba(18,18,18,0.75);
+      font-size: large;
+      background-color:grey;
       font-family: Orbitron;
       top:50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color:#f1f1f1;
+      color:black;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+
     }
-.butn:hover{
-    background-color: rgba(76,181,245,0.75);
+
+
+.select {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    width: 330px;
+    height: 100%;
+    border-bottom: 0px;
+    border-radius: 3px;
+    font-size: 25px;
+    
 }

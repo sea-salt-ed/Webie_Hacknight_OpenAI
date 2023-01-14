@@ -7,39 +7,128 @@
     <title>Project Generator</title>
     
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/result.css') }}" />
+
+  <script src="{{ url_for('static',filename='js/result.js') }}" ></script>
+
 </head>
-<body background="{{url_for('static', filename='backimage.jpg')}}">
+<body >
     <h1>Project Generator</h1>
 
     <form action="/" method="post">
-    <div class="item">
-    <h3>Level<br>
-    <select name="level" id="level">
-        <option selected>Choose...</option>
+
+    
+      <div class="Card">
+        <center>
+        <h3 > Get some project ideas!
+    
+    <select name="level"  class="custom-select">
+        <option selected>Choose your level...</option>
         <option value="Beginner">Beginner</option>
         <option value="Intermediate">Intermediate</option>
-        <option value="Adavanced">Adavanced</option>
-      </select>
-    </h3>
-    </div>
+        <option value="Advanced">Advanced</option>
+      </select></h3>
+      <br>
+      <br>
 
-    <div class="Card">
+    
+   
+
   <div class="CardInner">
-  <label>Enter the stacks with space...</label>
-  <div class="container">
-    <div class="Icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#657789" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    </div>
+  
+  
     <div class="InputContainer">
-      <input name="stacks" placeholder="Add the stacks here..."/>
+      <input class="stack_inp" name="stacks" placeholder="Add the stacks here..."/>
     </div>
   </div>
  </div>
 </div>
+
+</center>
+<br>
+<br>
+
+
 <br>
 <br>
 
 <input type="submit" href="/result" value="Generate" class="butn" >
 </form>
-</body>
+
+
+<br>
+<h1>Results</h1>
+
+{% if title1,title2,title3,title4,title5,explan1,explan2,explan3,explan4,explan5,url1,url2,url3,url4,url5 %}
+<div class="row">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <h3 class="title">{{ title1 }}</h3>
+  
+      </div>
+      <div class="flip-card-back">
+          <p class="det">{{explan1}}</p>
+          <a href="{{url2}}">{{url1}}</a>
+      </div>
+    </div>
+  </div>
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <h3 class="title">{{ title2 }}</h3>
+  
+      </div>
+      <div class="flip-card-back">
+          <p class="det">{{explan2}}</p>
+          <a href="{{url2}}">{{url2}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <h3 class="title">{{ title3 }}</h3>
+  
+      </div>
+      <div class="flip-card-back">
+          <p class="det">{{explan3}}</p>
+          <a href="{{url3}}">{{url3}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <h3 class="title">{{ title4 }}</h3>
+  
+      </div>
+      <div class="flip-card-back">
+          <p class="det">{{explan4}}</p>
+          <a href="{{url4}}">{{url4}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+          <h3 class="title">{{ title5 }}</h3>
+  
+      </div>
+      <div class="flip-card-back">
+          <p class="det">{{explan5}}</p>
+          <a href="{{url5}}">{{url5}}</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endif %}
+
+
+</div>
+
+
+
 </html>
