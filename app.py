@@ -148,7 +148,9 @@ def results():
     
 
 def generate(level,stacks):
-    return f""" Suggest five {level} level project ideas using {stacks} with explanation and link to a sample repository in a bulleted format using •  and project name - explanation and link with a line gap
+    return f""" Suggest five {level} level project ideas using {stacks} with explanation and link to a sample repository in a bulleted format using •  in the following format
+    • project name - explanation
+    Link to the repository
     
     
     """
