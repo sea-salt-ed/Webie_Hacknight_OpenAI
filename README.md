@@ -3,7 +3,7 @@
 
 
 # Webie ProGen
-Webie ProGen is a website to kickstart your journey in learning the stacks. It generates project ideas based on your level of knowledge and stacks chosen. Pretty cool right?
+Many a times,we have been stuck about which idea to choose for your projects right,whether it be web development,machine learning,artifical intelligence and what not.But dont worry,we have got you covered with Webie ProGen.It is an amazing website to kickstart your journey in learning the stacks. It generates project ideas based on your level of knowledge and stacks chosen. Pretty cool right? 
 ## Team members
 1. [Riya Sabu](https://github.com/riya461)
 2. [Saniya Teresa](https://github.com/iamsaniya)
@@ -14,7 +14,7 @@ Webie ProGen is a website to kickstart your journey in learning the stacks. It g
 [link to video]
 ## How it Works ?
 1. The website has options to add stacks of your choice and also your level
-2. Once you have chosen the options click generare and the ideas will be generated!
+2. Once you have chosen the options click generate and the ideas will be generated!
 2. Embed video of project demo
 ## Libraries used
 - Python - 3.10.6
