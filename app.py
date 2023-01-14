@@ -135,7 +135,7 @@ def results():
         if i.startswith("https:") or i.startswith("http:"):
             url.append(i)
     url5 = url[0]
-    if 'Link to the repository' in result5:
+    if 'repository' in result5:
         k = result5.index('Link')
     else:
         k = result5.index(url5)
