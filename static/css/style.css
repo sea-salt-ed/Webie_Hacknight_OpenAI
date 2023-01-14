@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
 
-* {
-  -webkit-font-smoothing: antialiased;
-  color: #acbdce;
-}
+
 
 :root {
   --border-radius: 10px;
@@ -12,8 +9,7 @@
 
 body,
 html {
-  background: #e2e9f4;
-  display: grid;
+  background: black;
   height: 100%;
   grid-template: 1fr/100%;
   place-items: center;
@@ -34,11 +30,13 @@ html {
 
 .CardInner {
   padding: 16px 16px;
-  background-color: #e2e9f4;
+  background-color: black;
   border-radius: var(--border-radius);
 }
 
 .container {
+    place-items: center;
+
   display: flex;
 }
 
@@ -70,7 +68,7 @@ label {
 }
 
 input {
-  background-color: #e3edf7;
+  background-color: black;
   padding: 16px 32px;
   border: none;
   display: block;
