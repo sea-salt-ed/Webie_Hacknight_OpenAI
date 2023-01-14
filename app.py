@@ -2,12 +2,13 @@ import os
 import openai
 from flask import Flask, render_template, url_for, redirect
 from flask.globals import request
-from dotenv import load_dotenv
-load_dotenv(dotenv_path=".env")
+
+
 
 app = Flask(__name__)
 
-openai.api_key = os.environ.get('ENV_VAR')
+openai.api_key = os.getenv('ENV_VAR')
+
 
 
 
@@ -26,11 +27,11 @@ def index():
         print(prompt)
         
         res = " "
-        for _  in range(0,3):
-            response = openai.Completion.create(
-            model="text-davinci-003",prompt = prompt
+        response = openai.Completion.create(
+            model="text-davinci-003",prompt = prompt,
+            max_tokens = 1000 
         )
-            res += response.choices[0].text 
+        res = response.choices[0].text 
             
             
         return redirect(url_for("index", result=res))
