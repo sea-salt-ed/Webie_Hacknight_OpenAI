@@ -8,11 +8,12 @@
     
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
 </head>
-<body>
+<body background="{{url_for('static', filename='backimage.jpg')}}">
     <h1>Project Generator</h1>
 
     <form action="/" method="post">
-    <h3>Level: &nbsp; &nbsp;
+    <div class="item">
+    <h3>Level<br>
     <select name="level" id="level">
         <option selected>Choose...</option>
         <option value="Beginner">Beginner</option>
@@ -20,22 +21,16 @@
         <option value="Adavanced">Adavanced</option>
       </select>
     </h3>
+    </div>
 
-    <h3>Stacks: &nbsp; &nbsp; <br> <br>
-        <h5> Enter the Stacks with space </h5>
-        <br> <br>
+    <div class="item">
+    <h3>Stacks
+        <p style="font-size:1.5vw;"><b> Enter stacks separated by space </b></p>
     <input name = "stacks" type="text" placeholder="Enter...">
-</h3>
-<br><br>
-
-<div class="butn">
-    
-<input  type="submit" href="/result" value="Generate" >
-</form>
-
-
-
+  </h3>
 </div>
-
+<br><br>
+<input type="submit" href="/result" value="Generate" class="butn" >
+</form>
 </body>
 </html>
