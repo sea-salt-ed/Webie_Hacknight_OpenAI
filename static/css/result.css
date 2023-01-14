@@ -1,12 +1,8 @@
-body {
-    background-color: aliceblue;
-}
-
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 19%;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  display: inline-block;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -30,20 +26,31 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 30px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  font-family: Libre Baskerville;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-text-align: center;
-  background-color: #bbb;
-  color: black;
+  text-align: center;
+  border: none;
+  background-color: rgba(76,181,245);
+  color:#f1f1f1;
+
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  border: none;
+  background-color: #bbb;
+  color: rgb(18,18,18);
   transform: rotateY(180deg);
+}
+
+.row{
+  width: 100%;
+  text-align: center;
+  border: none;
 }
