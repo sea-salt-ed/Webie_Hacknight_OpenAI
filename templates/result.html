@@ -7,6 +7,7 @@
     <title>Project Generator</title>
     
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/result.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
   <script src="{{ url_for('static',filename='js/result.js') }}" ></script>
 
 </head>
@@ -14,28 +15,10 @@
    
 <br>
 <br> <br> <br>
-<h1>The results</h1>
+<h1>Results</h1>
 
 {% if title1,title2,title3,title4,title5,explan1,explan2,explan3,explan4,explan5,url1,url2,url3,url4,url5 %}
-
-<!-- <h3 class="title">{{ title1 }}</h3>
-<p class="det">{{explan1}}</p>
-<a >{{url1}}</a>
-<h3 class="title">{{ title2 }}</h3>
-<p class="det">{{explan2}}</p>
-<a >{{url2}}</a>
-<h3 class="title">{{ title3 }}</h3>
-<p class="det">{{explan3}}</p>
-<a >{{url3}}</a>
-<h3 class="title">{{ title4 }}</h3>
-<p class="det">{{explan4}}</p>
-<a >{{url4}}</a>
-<h3 class="title">{{ title5 }}</h3>
-<p class="det">{{explan5}}</p>
-
-<a >{{url5}}</a> -->
-
-
+<div class="row">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -98,7 +81,7 @@
     </div>
   </div>
 
-
+</div>
 {% endif %}
 
 
@@ -108,7 +91,7 @@
 <br>
 
 <div class="back">
-<input  type="submit" onclick="history.go(-1)" value="Go Back!" >
+<input  type="submit" onclick="history.go(-1)" value="Go Back!" class="butn">
 
 </div>
 
