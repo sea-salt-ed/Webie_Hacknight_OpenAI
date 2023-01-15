@@ -13,6 +13,10 @@
 
 </head>
 <body >
+  <br>
+  <br>
+  <br>
+  <br>
     <h1>Project Generator</h1>
     <center>
     <h3>Get some project ideas!</h3><br>
@@ -41,6 +45,9 @@
   </div>
  </div>
 </div>
+<br>
+<br>
+<input type="submit" onClick="document.getElementById('middle').scrollIntoView();"  value="Generate" class="butn" >
 
 </center>
 <br>
@@ -50,7 +57,6 @@
 <br>
 <br>
 
-<input type="submit" href="/result" value="Generate" class="butn" >
 </form>
 
 
@@ -58,7 +64,7 @@
 <h1>Results</h1>
 
 {% if title1,title2,title3,title4,title5,explan1,explan2,explan3,explan4,explan5,url1,url2,url3,url4,url5 %}
-<div class="row">
+<div class="row cards" id = "middle">
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
