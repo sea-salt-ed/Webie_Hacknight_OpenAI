@@ -11,7 +11,7 @@ Many a times,we have been stuck about which idea to choose for our projects righ
 ## Team Id
 9RQ55wuOc7436RKqRraE
 ## Link to product walkthrough
-https://www.loom.com/share/226b0e5cbdd24738b23059ec4ba2598a
+https://www.loom.com/embed/226b0e5cbdd24738b23059ec4ba2598a
 ## How it Works ?
 1. The website has options to add stacks of your choice and also your level
 2. Once you have chosen the options click generate and the ideas will be generated!
