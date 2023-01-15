@@ -11,12 +11,16 @@
 
 body,
 html {
-    background: rgb(247, 202, 201);
-    
+    /*background: rgb(247, 202, 201);*/
     /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    background-image:url(abstract-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   height: 100%;
   grid-template: 1fr/100%;
   place-items: center;
@@ -31,6 +35,17 @@ html {
   height: 50px;
   width: 250px;
   font-size: large;
+  color:black;
+  font-family: Orbitron, sans-serif;
+}
+::placeholder {
+  color: #6d7f8f;
+}
+
+:focus {
+  outline: none;
+  color: black;
+  background-color: lighten(#e3edf7, 3%);
 }
 
 .Card{
@@ -104,7 +119,8 @@ h1{
 
 text-align: center;
 font-weight: 600;
-font-size: 3em;
+font-size: 5vw;
+font-family: Candal;
 letter-spacing: 0px;
 text-shadow: 1px 1px rgba(0,
 0,
@@ -134,6 +150,7 @@ text-shadow: 1px 1px rgba(0,
 0,
 0,
 0.02);
+color:#ffffff;
 }
 
 
@@ -179,4 +196,9 @@ text-shadow: 1px 1px rgba(0,
     border-radius: 3px;
     font-size: 25px;
     
+}
+
+h3{
+  color:#ffffff;
+  font-family: Poppins Extrabold;
 }
