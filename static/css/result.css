@@ -1,8 +1,9 @@
 
 
 .flip-card {
+  margin:10px;
   background-color: transparent;
-  width: 19%;
+  width: 30%;
   height: 200px;
   display: inline-block;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -14,6 +15,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  word-wrap: break-word;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
