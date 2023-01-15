@@ -15,7 +15,8 @@ https://www.loom.com/embed/226b0e5cbdd24738b23059ec4ba2598a
 ## How it Works ?
 1. The website has options to add stacks of your choice and also your level
 2. Once you have chosen the options click generate and the ideas will be generated!
-2. Embed video of project demo
+2. [Link](
+https://www.loom.com/embed/226b0e5cbdd24738b23059ec4ba2598a)
 ## Libraries used
 - Python - 3.10.6
 - Flask - 2.2.2
