@@ -181,6 +181,9 @@ color:#ffffff;
       font-weight: bolder;
 
     }
+.butn:hover{
+    background-color:white;
+  }
 
 
 .select {
