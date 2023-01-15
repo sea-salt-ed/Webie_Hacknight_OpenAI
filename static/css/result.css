@@ -40,15 +40,15 @@
 .flip-card-front {
   text-align: center;
   border: none;
-  background-color: rgb(152, 208, 243);
-  color:black;
+  background-color: rgb(42, 36, 36);
+  color:white;
 
 }
 
 /* Style the back side */
 .flip-card-back {
   border: none;
-  background-color: rgb(248, 218, 223);
+  background-color: white;
   color: rgb(18,18,18);
   transform: rotateY(180deg);
 }
