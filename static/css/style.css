@@ -4,6 +4,9 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Poppins:style=Extrabold');
+@import url('https://fonts.googleapis.com/css?family=Candal');
 
 :root {
   --border-radius: 10px;
@@ -174,7 +177,7 @@ color:#ffffff;
       text-decoration: none;
       font-size: large;
       background-color:grey;
-      font-family: Orbitron;
+      font-family: Orbitron, sans-serif;
       
       color:black;
       font-family: 'Courier New', Courier, monospace;
@@ -201,5 +204,15 @@ color:#ffffff;
 
 h3{
   color:#ffffff;
-  font-family: Poppins Extrabold;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+.footer{
+  color:#ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
