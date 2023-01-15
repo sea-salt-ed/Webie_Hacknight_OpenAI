@@ -35,6 +35,7 @@ https://www.loom.com/share/226b0e5cbdd24738b23059ec4ba2598a)
 ## How to configure
 1. Install Python 
 2. Clone this repository
+3. Add your API key in the .env file
 
 3.  Run the following commands in the directory
 ```cmd
