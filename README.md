@@ -12,18 +12,18 @@ Many a times,we have been stuck about which idea to choose for our projects righ
 ## Team Id
 9RQ55wuOc7436RKqRraE
 ## Link to product walkthrough
-![img](https://user-images.githubusercontent.com/90635335/212538735-4dee10b1-29e0-44e7-a23a-991890ff4b73.jpg)
+
+- Click the image to lead you to the video...
 
 
-https://user-images.githubusercontent.com/90635335/212539048-d3abcb24-bd6c-40eb-bf6b-c73aafdccad8.mp4
 
-
+[![ProGen](https://user-images.githubusercontent.com/90635335/212538735-4dee10b1-29e0-44e7-a23a-991890ff4b73.jpg)](https://www.loom.com/share/226b0e5cbdd24738b23059ec4ba2598a "ProGen")
 
 
 ## How it Works ?
 1. The website has options to add stacks of your choice and also your level
 2. Once you have chosen the options click generate and the ideas will be generated!
-2. [Link](
+2. [Link to the walkthrough](
 https://www.loom.com/share/226b0e5cbdd24738b23059ec4ba2598a)
 
 
