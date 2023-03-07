@@ -42,7 +42,14 @@
   border: none;
   background-color: rgb(42, 36, 36);
   color:white;
+  font-size:1.2em;
+  display: table;
+}
 
+.flip-card-front h3, .flip-card-back p{
+  display: table-cell;
+  vertical-align:middle;
+  text-align: center;
 }
 
 /* Style the back side */
@@ -51,6 +58,7 @@
   background-color: white;
   color: rgb(18,18,18);
   transform: rotateY(180deg);
+  display: table;
 }
 
 .row{
