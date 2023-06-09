@@ -29,7 +29,7 @@ https://www.loom.com/share/226b0e5cbdd24738b23059ec4ba2598a)
 NOTE : The feature which provides a github repo link was removed due to certain limitations. As such, the results will now consist of an idea and a brief description.
 
 ## Publicly hosted website
-< Coming soon! >
+https://seasalted.pythonanywhere.com/
 
 ## Libraries used
 - Python - 3.10.6
